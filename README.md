@@ -10,5 +10,28 @@
 ## Installation
 
 1. Install the package using pip:
+
    ```bash
    pip install faker
+   
+2. Open Django Shell from terminal:
+ 
+   ```bash
+   python manage.py shell
+
+3. Import the seeding function:
+
+   ```bash
+   from home.seed_db import *
+   
+4. Call the function to generate data:
+
+   ```bash
+   dbSeeder(records=50)  
+
+5. Call dbSeeder2 to populate additional data:
+
+   ```bash
+   dbSeeder2(records=50) 
+
+Generates 50 and if we dont enter records like dbSeeder() then it is set to 10 by default
